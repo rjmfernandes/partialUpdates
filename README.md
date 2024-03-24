@@ -219,7 +219,7 @@ curl -i -X PUT -H "Accept:application/json" \
           "collection"          : "test3"}'
 ```
 
-If we check our values at [mongodb](http://localhost:18081/db/demo/test3) all good. No nulls overritting at all. So now if we try with the following value in the producer:
+If we check our values at [mongodb](http://localhost:18081/db/demo/test3) all good. No nulls overriding at all. So now if we try with the following value in the producer:
 
 ```
 "1",{"id":1,"outer_field":null,"inner":{"demo.InnerField":{"id":3,"inner_field":null}}}
