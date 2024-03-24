@@ -1,0 +1,45 @@
+{
+    "type": "record",
+    "name": "testAvro",
+    "namespace": "demo",
+    "fields": [
+        {
+            "name": "id",
+            "type": "int"
+        },
+        {
+            "name": "outer_field",
+            "type": [
+                "null",
+                "string"
+            ],
+            "default": null
+        },
+        {
+            "name": "inner",
+            "type": [
+                "null",
+                {
+                    "type": "record",
+                    "name": "InnerField",
+                    "namespace": "demo",
+                    "fields": [
+                        {
+                            "name": "id",
+                            "type": "int"
+                        },
+                        {
+                            "name": "inner_field",
+                            "type": [
+                                "null",
+                                "string"
+                            ],
+                            "default": null
+                        }
+                    ]
+                }
+            ],
+            "default": null
+        }
+    ]
+}
